@@ -30,7 +30,7 @@ Adding the following scripts to your package.json allows an easy way to install,
 
 ```bash
 "scripts": {
-  "install": "yarn && python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && exit",
+  "install": "python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && exit",
   "migrate": ". venv/bin/activate && python server/manage.py migrate",
   "start": ". venv/bin/activate && python server/manage.py runserver"
 }
