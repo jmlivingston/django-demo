@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "This project is a way to quickly setup a barebones Django environment.",
   "scripts": {
-    "install": "yarn && python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && exit",
+    "install": "python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && exit",
     "migrate": ". venv/bin/activate && python server/manage.py migrate",
     "start": ". venv/bin/activate && python server/manage.py runserver"
   },
