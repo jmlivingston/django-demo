@@ -39,7 +39,7 @@ Adding the following scripts to your package.json allows an easy way to install,
 Install after git clone
 
 ```bash
-yarn run install
+yarn
 ```
 
 Migrate files to database (python)
