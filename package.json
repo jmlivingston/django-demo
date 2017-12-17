@@ -1,7 +1,7 @@
 {
   "name": "django-demo",
   "version": "1.0.0",
-  "description": "",
+  "description": "This project is a way to quickly setup a barebones Django environment.",
   "scripts": {
     "install": "yarn && python3 -m venv venv && . venv/bin/activate && pip install -r requirements.txt && exit",
     "migrate": ". venv/bin/activate && python server/manage.py migrate",
