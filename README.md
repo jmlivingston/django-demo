@@ -53,3 +53,41 @@ Start server (python)
 ```bash
 yarn run start
 ```
+
+## Add Views and Templates
+
+1. Update TEMPLATES.DIRS in settings.py
+
+```python
+TEMPLATES = [
+    {
+        # ...
+        'DIRS': [os.path.join(BASE_DIR, "templates")]
+        # ...
+    }
+]
+```
+
+2. Create a views.py with the following
+
+```python
+from django.shortcuts import render
+
+def main(request):
+  return render(request, "main.html")
+```
+
+3. Update urls.py
+
+```python
+#...
+from django.conf.urls import url
+from main import views
+
+urlpatterns = [
+    url(r'^$', views.main)
+    #...
+]
+```
+
+4. Create a templates directory and add main.html with some HTML markup.
